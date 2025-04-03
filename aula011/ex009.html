@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GringoChecker</title>
+</head>
+<body>
+    <h1>VEJA SE VOCÊ É GRINGO</h1>
+    Seu país: <input type="text" name='txtpais'id='txtpais'>
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id='res'></div>
+    <script>
+        function checar(){
+            var txtpais = document.getElementById('txtpais')
+            var res = document.querySelector('div#res')
+            if (txtpais.value == 'Brasil'){
+                res.innerHTML = 'É do <strong>BRASILLLLLLLL!</strong>'   
+            }
+            else{
+                res.innerHTML = "Sorry. I don't speak <strong>GRINGO</strong>"
+            }
+        }
+    </script>
+</body>
+</html>

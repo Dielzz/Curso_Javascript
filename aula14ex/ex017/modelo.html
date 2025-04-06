@@ -6,16 +6,19 @@
     <title>Modelo de exercicio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem
+        <div>
+            <p>Número: <input type="number" name="txtnum" id="txtnum">
+            <input type="button" value="Gerar tabuada" onclick="tabuada()"></p>
         </div>
-        <div id="foto">
-            <img src="manha.png" id="foto" alt="foto da manha">
+        <div>
+            <select name="selectab" id="selectab" size="10">
+                <option>Insira um número acima</option>
+            </select>
         </div>
     </section>
     <footer>
